@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="t d">
+  <title id="t">AI Tamizhaa HRMS</title>
+  <desc id="d">Open-source, multi-tenant HRMS with global payroll, built for AWS</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#140a2e"/>
+      <stop offset="1" stop-color="#2a0f4a"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0.85"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="320" rx="16" fill="url(#bg)"/>
+  <rect width="1280" height="320" rx="16" fill="url(#grid)"/>
+
+  <g font-family="Inter, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="72" y="140" fill="#f7f4ff" font-size="54" font-weight="650" letter-spacing="-1.2">AI Tamizhaa HRMS</text>
+    <text x="74" y="186" fill="#c0b6e4" font-size="22" font-weight="400">Multi-tenant HR, global payroll and onboarding, on infrastructure you own.</text>
+    <text x="74" y="246" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace" font-size="15" fill="#9a90c2" xml:space="preserve">24 payroll country packs<tspan fill="#43356b">  /  </tspan>PII sealed with KMS<tspan fill="#43356b">  /  </tspan>per-workspace SES domains<tspan fill="#43356b">  /  </tspan>Terraform</text>
+  </g>
+
+  <!-- Workspaces: three isolated tenants over one platform -->
+  <g transform="translate(968 70)">
+    <rect x="0" y="0" width="240" height="44" rx="10" fill="#1f1440" stroke="#a78bfa" stroke-opacity="0.35"/>
+    <circle cx="22" cy="22" r="7" fill="#a78bfa"/>
+    <rect x="40" y="16" width="120" height="12" rx="6" fill="#3d2c68"/>
+    <rect x="0" y="58" width="240" height="44" rx="10" fill="#1f1440" stroke="#a78bfa" stroke-opacity="0.35"/>
+    <circle cx="22" cy="80" r="7" fill="#c4b5fd"/>
+    <rect x="40" y="74" width="150" height="12" rx="6" fill="#3d2c68"/>
+    <rect x="0" y="116" width="240" height="44" rx="10" fill="#1f1440" stroke="#a78bfa" stroke-opacity="0.35"/>
+    <circle cx="22" cy="138" r="7" fill="#fbbf24"/>
+    <rect x="40" y="132" width="96" height="12" rx="6" fill="#3d2c68"/>
+    <rect x="0" y="176" width="240" height="6" rx="3" fill="url(#glow)"/>
+  </g>
+</svg>

@@ -1,0 +1,97 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "@open-hrms/ui/styles.css";
+
+/* The shared primitives live outside this app, so tell Tailwind to scan them. */
+@source "../../../../packages/ui/src";
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Operator console palette.
+
+   Same Apple-calibrated geometry as the tenant app (44px controls, iOS type
+   ramp, continuous radii, standard spring easing, all from @open-hrms/ui) but
+   on a permanently dark "control plane" palette, so an operator can never
+   mistake this surface for a tenant workspace. AI Tamizhaa violet is the
+   accent, with saffron for highlights.
+
+   Unlayered, so it wins over the shared tokens' light defaults.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  color-scheme: dark;
+
+  /* Operator "control plane": deep indigo panels, bright violet accent. */
+  --saffron: #fbbf24;
+  --saffron-bg: #33260a;
+  --brand-gradient: linear-gradient(135deg, #2e1065 0%, #5b21b6 55%, #86198f 100%);
+  --brand-glow: radial-gradient(60% 50% at 50% 0%, rgba(167, 139, 250, 0.10), transparent 70%);
+  --background: #0a0816;
+  --foreground: #efeafd;
+  --card: #141029;
+  --card-foreground: #efeafd;
+  --popover: #1c1736;
+  --popover-foreground: #efeafd;
+  --secondary: #1c1736;
+  --secondary-foreground: #efeafd;
+  --muted: #181331;
+  --muted-foreground: #a49cc6;
+  --border: #2a2450;
+  --input: #372f63;
+
+  --primary: #a78bfa;
+  --primary-foreground: #1a0b3d;
+  --accent: #261a4d;
+  --accent-foreground: #cbbcff;
+  --ring: #a78bfa;
+
+  --destructive: #ff5f6d;
+  --chart-1: #a78bfa;
+  --chart-2: #fbbf24;
+  --chart-3: #60a5fa;
+  --chart-4: #f472b6;
+  --chart-5: #a49cc6;
+
+  --sidebar: #141029;
+  --sidebar-foreground: #efeafd;
+  --sidebar-primary: #a78bfa;
+  --sidebar-primary-foreground: #1a0b3d;
+  --sidebar-accent: #261a4d;
+  --sidebar-accent-foreground: #cbbcff;
+  --sidebar-border: #2a2450;
+  --sidebar-ring: #a78bfa;
+
+  --ink-2: #d5cdf0;
+  --muted-2: #a49cc6;
+  --faint: #6c6493;
+  --line: #2a2450;
+  --line-2: #1f1a3b;
+  --hairline: rgba(167, 139, 250, 0.2);
+  --accent-50: #261a4d;
+  --accent-100: #33246a;
+  --accent-700: #cbbcff;
+  --coral: #ff5f6d;
+  --ok: #34d399;
+  --ok-bg: #0c2e22;
+  --warn: #fbbf24;
+  --warn-bg: #33280a;
+  --bad: #ff5f6d;
+  --bad-bg: #3a1219;
+  --info: #60a5fa;
+  --info-bg: #0f2347;
+  --grey-bg: #1f1a3b;
+  --grey-fg: #a49cc6;
+
+  --elev-1: 0 1px 2px rgba(0, 0, 0, 0.45);
+  --elev-2: 0 2px 8px rgba(0, 0, 0, 0.5);
+  --elev-3: 0 8px 24px rgba(0, 0, 0, 0.55);
+  --elev-4: 0 16px 44px rgba(0, 0, 0, 0.6);
+  --elev-5: 0 30px 80px rgba(0, 0, 0, 0.68);
+
+  --material-thick: rgba(20, 16, 41, 0.9);
+  --material-regular: rgba(20, 16, 41, 0.76);
+  --material-thin: rgba(20, 16, 41, 0.6);
+  --material-blur: saturate(180%) blur(20px);
+}
+
+/* Nothing in the console toggles `.dark`: the palette above IS the console's
+   only theme, so there is no light/dark pair to keep in sync. */

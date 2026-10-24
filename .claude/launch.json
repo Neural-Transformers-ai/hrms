@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "web",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["node_modules/next/dist/bin/next", "dev", "-p", "3410"],
+      "cwd": "apps/web",
+      "port": 3410
+    },
+    {
+      "name": "console",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["node_modules/next/dist/bin/next", "dev", "-p", "3420"],
+      "cwd": "apps/console",
+      "port": 3420
+    }
+  ]
+}
